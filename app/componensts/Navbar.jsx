@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Navbar() {
   return (
-    <nav className='flex justify-between px-[60px] py-[10px]'>
+    <div className="flex max-w-7xl mx-auto justify-between px-4 py-4 absolute top-0 w-full left-0 right-0 z-50">
       <Link href="/">
         <Image src="/stayswift.svg" 
         alt='"Stay Swift Logo'
@@ -18,9 +18,9 @@ export default function Navbar() {
         <li href="#">Contact Us</li>
         <li href="/bookings">Bookings</li>
         <li>
-        <Link href="/login" class="login" className='bg-orange-500 px-[14px] py-[6px] text-[14px] rounded-sm text-white font-bold'>Login</Link>
+        <Link href="/login" className="bg-primary px-[20px] py-[10px] font-bold rounded-md text-white">Login</Link>
       </li>
       </ul>
-    </nav>
+    </div>
   )
 }
