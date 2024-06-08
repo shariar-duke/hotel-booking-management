@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 
 export default function PastBooking() {
   return (
-    <div className='space-y-4'>
-   <h2 className="text-xl font-bold">🕛️ Past Bookings</h2>
-   <div className="bg-[#ebf6e9] p-4 rounded-md">
+    <div className="space-y-4">
+      <h2 className="text-xl font-bold">🕛️ Past Bookings</h2>
+      <div className="bg-[#ebf6e9] p-4 rounded-md">
         <div className="flex justify-between items-center ">
           <div>
             <h3 className="text-xl font-semibold">Effotel By Sayaji Jaipur</h3>
@@ -21,5 +21,5 @@ export default function PastBooking() {
         </div>
       </div>
     </div>
-  )
+  );
 }
