@@ -4,7 +4,7 @@ import React from 'react'
 export default function Search() {
   return (
     <div className="lg:max-h-[250px] mt-6">
-    <div id="searchParams">
+    <div className="bg-white w-full h-full py-10 lg:py-12 px-6 lg:px-8 rounded-xl border border-black/10 shadow-lg lg:flex items-center [&>*]:flex-1 [&>*]:px-2 [&>div>span]:mb-3 space-y-5 lg:space-y-0">
   
       <div>
         <span>Destination</span>
@@ -19,6 +19,8 @@ export default function Search() {
         </h4>
 
       </div>
+
+   
 
       <div>
         <span>Check in</span>
