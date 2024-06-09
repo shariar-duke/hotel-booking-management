@@ -8,3 +8,5 @@ export async function getAllHotels() {
 
     return replaceMongoIdInArray(hotels);
 }
+
+// hotel model theke sob data tule anbe ei function and  object id gula k replace kore just id banabe 
