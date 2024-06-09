@@ -56,3 +56,4 @@ const hotelSchema = new Schema({
   });
 
   export const hotelModel = mongoose.models.hotels ?? mongoose.model("hotels", hotelSchema);
+  // ei line a j check ta hoy seta holo mongoose er model er modhe hotels model ta add hoise naki. jode add hye thake tahke oi model ta export korbo jode na hoy tahole create kore return korbo 
