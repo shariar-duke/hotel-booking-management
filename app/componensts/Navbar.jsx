@@ -16,7 +16,9 @@ export default function Navbar() {
         <li href="#">Recommended Places</li>
         <li href="#">About Us</li>
         <li href="#">Contact Us</li>
-        <li href="/bookings">Bookings</li>
+        <Link href="/bookings" className="cursor-pointer text-[16px]">
+  Bookings
+</Link>
         <li>
         <Link href="/login" className="bg-primary px-[20px] py-[10px] font-bold rounded-md text-white">Login</Link>
       </li>
