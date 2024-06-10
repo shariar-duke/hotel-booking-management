@@ -1,6 +1,6 @@
 import React from "react";
-import LoginForm from "../componensts/auth/LoginForm";
-import SocialLogin from "../componensts/auth/SocialLogin";
+import LoginForm from "@/app/componensts/auth/LoginForm";
+import SocialLogin from "@/app/componensts/auth/SocialLogin";
 
 export default function LoginPage() {
   return (

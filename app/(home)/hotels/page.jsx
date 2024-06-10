@@ -1,6 +1,6 @@
-import HotelList from "../componensts/hotel/HotelList";
-import Filter from "../componensts/search/Filter";
-import Search from "../componensts/search/Search";
+import HotelList from "@/app/componensts/hotel/HotelList";
+import Filter from "@/app/componensts/search/Filter";
+import Search from "@/app/componensts/search/Search";
 export default function HotelListPage() {
   return (
     <>

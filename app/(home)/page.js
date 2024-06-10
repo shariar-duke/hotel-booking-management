@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Search from "./componensts/search/Search";
+import Search from "../componensts/search/Search";
 
 export default function Home() {
   return (

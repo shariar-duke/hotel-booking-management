@@ -1,7 +1,7 @@
 import React from "react";
-import ProfileInfo from "../componensts/users/ProfileInfo";
-import PastBooking from "../componensts/users/bookings/PastBooking";
-import UpcomingBooking from "../componensts/users/bookings/UpcomingBooking";
+import ProfileInfo from "@/app/componensts/users/ProfileInfo";
+import PastBooking from "@/app/componensts/users/bookings/PastBooking";
+import UpcomingBooking from "@/app/componensts/users/bookings/UpcomingBooking";
 
 export default function BookingsPage() {
   return (
