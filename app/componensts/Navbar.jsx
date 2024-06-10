@@ -1,8 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import {auth} from  "../../auth.js"
 
-export default function Navbar({ sideMenu }) {
+// atuthe take nia asbo
+// auth er data ante chaile eta async function hote hobe tai eta k async function banay felbo
+
+export default async function Navbar({ sideMenu }) {
+// session take nia aslm 
+  const session = await auth()
+// session a jode user tahke tar mane holo session a logged in user ase ..
   return (
     <div className="flex max-w-7xl mx-auto justify-between px-4 py-4 absolute top-0 w-full left-0 right-0 z-50">
       <Link href="/">
@@ -23,12 +30,18 @@ export default function Navbar({ sideMenu }) {
             Bookings
           </Link>
           <li>
-            <Link
+
+           {
+            session?.user ? (<div>
+              <span className="mx-1">{session?.user.name}</span> <span>|</span>
+            </div>) : (<Link
               href="/login"
               className="bg-primary px-[20px] py-[10px] font-bold rounded-md text-white"
             >
               Login
-            </Link>
+            </Link>)
+           }
+            
           </li>
         </ul>
       )}
