@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import {auth} from  "../../auth.js"
+import Logout from "./auth/Logout.jsx";
 
 // atuthe take nia asbo
 // auth er data ante chaile eta async function hote hobe tai eta k async function banay felbo
@@ -34,6 +35,7 @@ export default async function Navbar({ sideMenu }) {
            {
             session?.user ? (<div>
               <span className="mx-1">{session?.user.name}</span> <span>|</span>
+              <Logout/>
             </div>) : (<Link
               href="/login"
               className="bg-primary px-[20px] py-[10px] font-bold rounded-md text-white"
