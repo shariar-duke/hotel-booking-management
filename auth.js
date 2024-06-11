@@ -15,6 +15,10 @@ export const {
     databaseName: process.env.ENVIRONMENT,
   }),
 
+  session:{
+    strategy: "jwt",
+  },
+
   providers: [
     CredentialsProvider({
       credentials: {
