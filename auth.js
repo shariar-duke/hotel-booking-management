@@ -4,8 +4,9 @@ import CredentialsProvider from "next-auth/providers/credentials";
 import { MongoDBAdapter } from "@auth/mongodb-adapter";
 import mongoClientPromise from "./database/mongoClientPromise";
 import { userModel } from "./models/user-model";
+import bcrypt from "bcrypt";
 
-export const {
+export  const {
   handlers: { GET, POST },
   auth,
   signIn,
@@ -37,7 +38,7 @@ export const {
 
           if (user) {
             // email ta abar milay dekhalm
-            const isMatch = user.email === credentials.email;
+            const isMatch =  bcrypt.compare(credentials.password, user.password);
 
             if (isMatch) {
               return user;
