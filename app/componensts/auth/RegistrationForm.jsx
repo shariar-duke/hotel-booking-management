@@ -20,7 +20,7 @@ export default function RegistrationForm() {
         },
         body: JSON.stringify({ fname, lname, email, password }),
       });
-      response.status === 201 && router.push("/lgin");
+      response.status === 201 && router.push("/login");
     } catch (err) {
       setError(err.message);
     }

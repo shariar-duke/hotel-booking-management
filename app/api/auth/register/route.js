@@ -1,7 +1,7 @@
 import { userModel } from "@/models/user-model";
 import { dbConnect } from "@/service/mongo";
 import { NextRequest, NextResponse } from "next/server";
-import bcrypt from "bcryptjs";
+import bcrypt from "bcrypt";
 export const POST = async (request) => {
   // assume kortse ei name a request a variable gula asbe
   const { fname, lname, email, password } = await request.json();
