@@ -1,5 +1,6 @@
 import React from "react";
 import HotelRating from "./HotelRating";
+import HotelReviewNumber from "./HotelReview";
 import Link from "next/link";
 export default function HotelSummaryInfo({ fromListPage, info }) {
   return (
@@ -9,7 +10,7 @@ export default function HotelSummaryInfo({ fromListPage, info }) {
         <p>📍 {info?.city}</p>
         <div className="flex gap-2 items-center my-4">
           <HotelRating id={info?.id} />
-          {/* <HotelReviewNumber id={info?.id} /> */}
+          <HotelReviewNumber id={info?.id} />
         </div>
         <div>
             <span className="bg-yellow-300 p-1 rounded-md">{info?.propertyCategory} Star Property</span>
