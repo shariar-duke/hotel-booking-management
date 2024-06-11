@@ -1,4 +1,6 @@
-import { hotelModel } from "@/models/hotel-model";
+import { hotelModel  } from "@/models/hotel-model";
+import { ratingModel } from "@/models/rating-model"; // rating model ta import korlam 
+import { reviewModel } from "@/models/review-model";
 import { replaceMongoIdInArray } from "@/utils/data-util";
 
 export async function getAllHotels() {
@@ -9,4 +11,17 @@ export async function getAllHotels() {
 
     return replaceMongoIdInArray(hotels);
 }
-// hotel model theke sob data tule anbe ei function and  object id gula k replace kore just id banabe 
+
+// hotel er rating pawar jnno 
+
+export async function getRatingsForAHotel(hotelId) {
+    const ratings = await ratingModel.find({hotelId: hotelId}).lean();
+    return replaceMongoIdInArray(ratings);
+}
+
+//review pawar jnno 
+
+export async function getReviewsForAHotel(hotelId) {
+    const reviews = await reviewModel.find({ hotelId: hotelId }).lean();
+    return replaceMongoIdInArray(reviews);
+}
